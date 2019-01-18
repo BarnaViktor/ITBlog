@@ -1,0 +1,12 @@
+<h1><%=t('Posts')%></h1>
+<% @posts.each do |post| %>
+    <div class="well">
+        <tr>
+            <td><%= link_to post.title, authors_post_path(post) %></td>
+            <td><%= link_to t('edit'), edit_authors_post_path(post), class: "btn btn-sm btn-warning" %></td>
+            <td><%= link_to t('delete'), authors_post_path(post), method: :delete, data: { confirm: t('Are_you_sure?')},
+             class: "btn btn-sm btn-danger" %></td>
+        </tr>
+        
+    </div>
+<% end %>

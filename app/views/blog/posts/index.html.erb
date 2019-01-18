@@ -1,0 +1,12 @@
+<h1><%= t('Posts')%></h1>
+<% @posts.each do |post| %>
+    <div class="well">
+        <h3><%=post.title %></h3>
+        <p class="published-date"><%=post.display_day_published%></p>
+        <p><%= post.body %></p>
+        <%= link_to t('Read_more'), post_path(post), :class => 'btn btn-default' %>
+    </div>
+<% end %>
+<div class="apple_pagination">
+    <%= will_paginate @posts, container: false %>
+</div>

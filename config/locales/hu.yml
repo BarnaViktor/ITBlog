@@ -1,0 +1,36 @@
+hu:
+  title: "Cím"
+  body: "Szöveg"
+  publish: "Publikálás"
+  edit: "Módosítás"
+  delete: "Töröl"
+  Create_post: "Bejegyzés létrehozása"
+  Edit_post: "Bejegyzés módosítása"
+  Posts: "Blog bejegyzések"
+  Are_you_sure?: "Biztos benne?"
+  Read_more: "Olvass többet"
+  Home: "Főoldal"
+  My_posts: "Saját bejegyzések"
+  Log_out: "Kijelentkezés"
+  Log_in: "Bejelentkezés"
+  email: "email cím"
+  password: "Jelszó"
+  remember_me: "Emlékezz már"
+  Sign_up: "Regisztráció"
+  password: "Jelszó"
+  characters_minimum: "karakter minimum"
+  password_confirmation: "Jelszó megerősítés"
+  will_paginate:
+    previous_label: "Előző"
+    next_label: "Következő"
+  activerecord:
+    errors:
+      models:
+        post:
+          attributes:
+            title:
+              too_short: "A cím hosszának minimum 5 karakternak kell lennie!"
+              blank: "A cím nem lehet üres!"
+            body:
+              too_short: "A szöveg hosszának minimum 5 karakternak kell lennie!"
+              blank: "A szöveg nem lehet üres!"
